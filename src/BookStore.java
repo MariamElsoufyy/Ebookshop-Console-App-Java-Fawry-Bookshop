@@ -229,7 +229,7 @@ public class BookStore {
         int currentYear = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
         System.out.println("Outdated books:");
         for (Book book : inventory) {
-            if (currentYear - book.getPublishYear() >= years) {
+            if (currentYear - book.getPublishYear() > years) {
                 System.out.println(book.getType() + " : " + book.getTitle() + " (ISBN: " + book.getIsbn()
                         + " ), Year : " + book.getPublishYear());
                 outdatedBooks.add(book);

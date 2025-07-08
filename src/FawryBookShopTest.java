@@ -52,8 +52,8 @@ public class FawryBookShopTest {
             System.out.println("Fawry BookShop: Expected error - " + e.getMessage());
         }
 
-        System.out.println("Fawry BookShop: Checking for outdated books (older than 2 years) and removing them.");
-        int years = 2;
+        System.out.println("Fawry BookShop: Checking for outdated books (older than 5 years) and removing them.");
+        int years = 5;
         String removeChoice = "yes";
         BookStore.checkOutdatedBooks(years, removeChoice);
         bookStore.viewBooks();
